@@ -530,7 +530,7 @@ const ELDRoutePlanner = () => {
       
       {/* Google Maps Script - Add to your HTML head */}
       <script 
-        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=geometry" 
+        src={`https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}&libraries=geometry`} 
         async 
         defer
       ></script>
