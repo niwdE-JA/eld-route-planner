@@ -47,7 +47,7 @@ const ELDRoutePlanner = () => {
 
     try {
       // Call your existing REST API
-      const response = await fetch(`${process.env.API_BASE_URL}/api/calculate-route`, {
+      const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/calculate-route`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
